@@ -1,0 +1,12 @@
+name          'danieldreier-bootstrap'
+version       '0.1.0'
+source        'github.com/danieldreier/puppet-bootstrap'
+author        'Daniel Dreier'
+license       'Apache 2.0'
+summary       'Provide a curl|bash puppet install script for puppet masters'
+description   ''
+project_page  'https://github.com/danieldreier/puppet-bootstrap'
+
+dependency 'puppetlabs/stdlib'
+dependency 'puppetlabs/apache'
+dependency 'jfryman/nginx'

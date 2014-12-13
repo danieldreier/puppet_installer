@@ -1,0 +1,8 @@
+fixtures:
+  repositories:
+    stdlib: "git://github.com/puppetlabs/puppetlabs-stdlib.git"
+    nginx:
+      repo: "git://github.com/jfryman/puppet-nginx.git"
+      ref: "v0.0.10"
+  symlinks:
+    bootstrap: "#{source_dir}"
