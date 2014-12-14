@@ -1,18 +1,18 @@
-# == Class bootstrap::config::apache
+# == Class puppet_installer::config::apache
 #
 # Configure an apache vhost
 #
-class bootstrap::config::apache {
-  if $::bootstrap::manage_webserver == true {
+class puppet_installer::config::apache {
+  if $::puppet_installer::manage_webserver == true {
     include apache
   }
 
-  apache::vhost { $::bootstrap::vhost_domain:
+  apache::vhost { $::puppet_installer::vhost_domain:
     port             => '443',
-    docroot          => "${::bootstrap::www_root}/www/deploy",
+    docroot          => "${::puppet_installer::www_root}/www/deploy",
     fallbackresource => '/agent.sh',
     ssl              => true,
-    ssl_cert         => $::bootstrap::ssl_cert,
-    ssl_key          => $::bootstrap::ssl_key,
+    ssl_cert         => $::puppet_installer::ssl_cert,
+    ssl_key          => $::puppet_installer::ssl_key,
   }
 }

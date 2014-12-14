@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# this hasn't been added yet; I'm just working on different ways to download
+# stuff that I can later incorporate into the main script
+
 # exists COMMAND
 exists() {
   if type "$1" >/dev/null 2>&1

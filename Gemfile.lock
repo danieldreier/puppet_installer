@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/danieldreier/puppet_spec_facts.git
-  revision: 50f54ac1ff219fcc15a8814f08dd8aa8697ceb10
+  revision: 8056a124fc422b6e95ae7315053ffd80005a8131
   specs:
-    puppet_spec_facts (0.0.1)
+    puppet_spec_facts (0.1.0)
       json
       puppet (~> 3.7)
 

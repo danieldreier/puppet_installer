@@ -1,9 +1,8 @@
-# == Class bootstrap::params
+# == Class puppet_installer::params
 #
-# This class is meant to be called from bootstrap
-# It sets variables according to platform
+# This class is meant to be called from puppet_installer
 #
-class bootstrap::params {
+class puppet_installer::params {
   $master           = $::fqdn
   $webserver        = 'nginx'
   $www_root         = "${::confdir}/www"

@@ -257,9 +257,9 @@ is_puppet_installed() {
 
 require_root_access
 run_agent() {
-<% if scope['bootstrap::master'].is_a? String -%>
+<% if scope['puppet_installer::master'].is_a? String -%>
   # trigger an agent run immediately and wait for a cert to be signed
-  puppet agent --test --waitforcert 5 --server <%= scope['bootstrap::master'] %>
+  puppet agent --test --waitforcert 5 --server <%= scope['puppet_installer::master'] %>
 <% else -%>
   # do nothing
 <% end -%>

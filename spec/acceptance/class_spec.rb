@@ -1,12 +1,12 @@
 require 'spec_helper_acceptance'
 
-describe 'bootstrap class' do
+describe 'puppet_installer class' do
 
   context 'default parameters' do
     # Using puppet_apply as a helper
     it 'should work idempotently with no errors' do
       pp = <<-EOS
-      class { 'bootstrap': }
+      class { 'puppet_installer': }
       EOS
 
       # Run it twice and test for idempotency
@@ -14,13 +14,5 @@ describe 'bootstrap class' do
       apply_manifest(pp, :catch_changes  => true)
     end
 
-    describe package('bootstrap') do
-      it { is_expected.to be_installed }
-    end
-
-    describe service('bootstrap') do
-      it { is_expected.to be_enabled }
-      it { is_expected.to be_running }
-    end
   end
 end

@@ -2,10 +2,10 @@
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with bootstrap](#setup)
-    * [What bootstrap affects](#what-bootstrap-affects)
+3. [Setup - The basics of getting started with puppet_installer](#setup)
+    * [What puppet_installer affects](#what-puppet_installer-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with bootstrap](#beginning-with-bootstrap)
+    * [Beginning with puppet_installer](#beginning-with-puppet_installer)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -25,9 +25,9 @@ fqdn, then sets up an apache or nginx vhost to host the script.
 
 ## Setup
 
-### What bootstrap affects
+### What puppet_installer affects
 
-* Creates a folder in /etc/puppet/www to store the deploy script
+* Creates a folder in /etc/puppet/www to store the install script
 * Sets up an Apache or Nginx vhost
 
 ### Setup Requirements
@@ -39,14 +39,14 @@ the master, you have no way to trust the master's SSL certificate.
 
 Beyond that, typing --insecure on each curl gets old quick.
 
-### Beginning with bootstrap
+### Beginning with puppet_installer
 
 At the most basic, you'll need something like:
 
 ```puppet
 include nginx
 
-class {'::bootstrap':
+class {'::puppet_installer':
   master    => $::fqdn,
   webserver => 'nginx',
   www_root  => '/etc/puppet/www',
