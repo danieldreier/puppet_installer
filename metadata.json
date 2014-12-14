@@ -3,21 +3,69 @@
   "version": "0.1.0",
   "author": "Daniel Dreier",
   "summary": "Provide a curl|bash puppet install script for puppet masters",
-  "license": "Apache 2.0",
-  "source": "github.com/danieldreier/puppet-puppet_installer",
-  "project_page": "https://github.com/danieldreier/puppet-puppet_installer",
-  "issues_url": "https://github.com/danieldreier/puppet-puppet_installer/issues",
+  "license": "Apache-2.0",
+  "source": "github.com/danieldreier/puppet_installer",
+  "project_page": "https://github.com/danieldreier/puppet_installer",
+  "issues_url": "https://github.com/danieldreier/puppet_installer/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_requirement": ">= 1.0.0"
+      "version_requirement": ">= 4.0.0"
     },
     {
       "name": "puppetlabs-apache"
     },
     {
       "name": "jfryman-nginx",
-      "version_requirement": ">= 1.0.0"
+      "version_requirement": ">= 0.1.0"
     }
   ]
 }
