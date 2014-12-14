@@ -1,6 +1,6 @@
 {
   "name": "danieldreier-puppet_installer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Daniel Dreier",
   "summary": "Provide a curl|bash puppet install script for puppet masters",
   "license": "Apache-2.0",
