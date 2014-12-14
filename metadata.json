@@ -4,7 +4,7 @@
   "author": "Daniel Dreier",
   "summary": "Provide a curl|bash puppet install script for puppet masters",
   "license": "Apache-2.0",
-  "source": "github.com/danieldreier/puppet_installer",
+  "source": "https://github.com/danieldreier/puppet_installer",
   "project_page": "https://github.com/danieldreier/puppet_installer",
   "issues_url": "https://github.com/danieldreier/puppet_installer/issues",
   "operatingsystem_support": [
@@ -61,7 +61,8 @@
       "version_requirement": ">= 4.0.0"
     },
     {
-      "name": "puppetlabs-apache"
+      "name": "puppetlabs-apache",
+      "version_requirement": ">= 1.0.0"
     },
     {
       "name": "jfryman-nginx",
